@@ -1,0 +1,38 @@
+{% extends "template.html" %}
+{% block contenido %}
+<body>
+  <div class="container ">
+    <div class="card  bg-info" >
+      <a href="{{ url_for('brazo')}}"><img src="{{url_for('static', filename='images/brazo.jpeg')}}"></a>
+      <a href="{{ url_for('brazo')}}"><h4> Rutina de brazo </h4></a>
+      <p > Haciendo click entrara a la rutina </p>
+      
+    </div>
+    <div class="card bg-info" >
+      <a href="{{ url_for('piernas')}}"><img src="{{url_for('static', filename='images/pierna.jpg')}}"></a>
+      <a href="{{ url_for('piernas')}}"><h4 class=" text-center " > Rutina de piernas </h4></a>
+      <p class="text-center " > Haciendo click entrara a la rutina </p>
+      
+    </div>
+    <div class="card bg-info " >
+      <a href="{{ url_for('espalda')}}"><img src="{{url_for('static', filename='images/espalda.jpeg')}}"></a>
+      <a href="{{ url_for('espalda')}}"><h4> Rutina de espalda </h4></a>
+      <p > Haciendo click entrara a la rutina </p>
+      
+    </div>
+    <div class="card bg-info " >
+      <a href="{{ url_for('pecho')}}"><img src="{{url_for('static', filename='images/hombro.jpeg')}}"></a>
+      <a href="{{ url_for('pecho')}}"><h4> Rutina de pecho </h4></a>
+      <p > Haciendo click entrara a la rutina </p>
+      
+    </div>
+    <div class="card bg-info " >
+      <a href="{{ url_for('aerobico')}}"><img src="{{url_for('static', filename='images/running.jpg')}}"></a>
+      <a href="{{ url_for('aerobico')}}"><h4  > Rutina de aerobico </h4></a>
+      <p > Haciendo click entrara a la rutina </p>
+      
+    </div>
+  </div> 
+
+</body>
+{% endblock %}

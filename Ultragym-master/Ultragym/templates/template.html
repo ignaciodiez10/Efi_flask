@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logoHeader">
+                <img src="{{url_for('static', filename='images/logo.png')}}" alt="">
+            </div>
+                <div class="divOpciones">
+                    <ul>
+                        <li><a href="paginas/faqs.html">Inicio</a></li>
+                        <li><a href="paginas/quienesSomos.html">Quienes somos</a></li>
+                        <li><a href="paginas/paginaError.html">Perfil</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+
+    <div class="titulo">
+        <div class="col-md-12">
+            <span>
+                {% block title %}{% endblock %}
+            </span>
+        </div>
+    </div>
+    {% block contenido %}
+    {% endblock %}
+</body>
+<br>
+<br>
+<br>
+<footer class="InformacionDeLaLibreria">
+    <div class="container">
+        <div class="redes">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="derecha"> 
+                        <a href="https://www.gmail.com/">libreria@gmail.com</a>
+                        <a href="https://www.instagram.com/"><i class="bi-instagram" ></i>
+                        <a href="https://www.facebook.com/"><i class="bi-facebook" ></i>
+                        <a href="https://www.whatsapp.com/"><i class="bi-whatsapp" ></i>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</footer>
+</html>
